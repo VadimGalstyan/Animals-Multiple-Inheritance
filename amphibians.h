@@ -14,7 +14,7 @@ public:
 public:
 void print() override;
 
-public:
+private:
 bool m_slimySkin = true;
 
 };

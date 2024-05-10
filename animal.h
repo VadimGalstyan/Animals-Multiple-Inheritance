@@ -9,13 +9,19 @@ public:
 Animal(const std::string&,const int&,const int&);
 virtual ~Animal();
 
+Animal(const Animal&);
+
 public:
 virtual void print();
+int getCount() const;
 
 protected:
 std::string m_name;
 int m_weight = 0;
 int m_age = 0;
+
+private:
+static int count;
 
 };
 
